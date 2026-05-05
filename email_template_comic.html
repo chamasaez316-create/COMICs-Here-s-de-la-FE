@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tu cómic ya está listo</title>
+</head>
+<body style="margin:0;padding:0;background-color:#0f0e17;font-family:'Georgia',serif;">
+
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#0f0e17;padding:40px 0;">
+    <tr>
+      <td align="center">
+        <table width="600" cellpadding="0" cellspacing="0" border="0" style="max-width:600px;width:100%;">
+
+          <!-- ENCABEZADO / HERO -->
+          <tr>
+            <td style="background-color:#1a1829;border-radius:12px 12px 0 0;padding:48px 40px 36px;text-align:center;border-top:4px solid #e8c547;">
+              <!-- Ícono / logo placeholder -->
+              <div style="display:inline-block;background:#e8c547;border-radius:50%;width:64px;height:64px;line-height:64px;font-size:30px;margin-bottom:24px;">
+                📖
+              </div>
+              <h1 style="margin:0 0 8px;font-size:28px;font-weight:700;color:#ffffff;letter-spacing:-0.5px;font-family:'Georgia',serif;">
+                ¡Tu cómic llegó!
+              </h1>
+              <p style="margin:0;font-size:15px;color:#a09fbb;font-family:Arial,sans-serif;letter-spacing:0.3px;">
+                Gracias por tu compra — ya podés descargarlo
+              </p>
+            </td>
+          </tr>
+
+          <!-- CUERPO PRINCIPAL -->
+          <tr>
+            <td style="background-color:#1a1829;padding:0 40px 32px;">
+
+              <!-- Saludo personalizado -->
+              <p style="margin:32px 0 8px;font-size:17px;color:#e2e0f0;font-family:Arial,sans-serif;">
+                Hola <strong style="color:#e8c547;">{{1.payer.first_name}}</strong> 👋
+              </p>
+              <p style="margin:0 0 28px;font-size:15px;color:#a09fbb;line-height:1.7;font-family:Arial,sans-serif;">
+                Tu pago fue acreditado con éxito. A continuación encontrás el link para descargar tu cómic digital.
+              </p>
+
+              <!-- Separador -->
+              <hr style="border:none;border-top:1px solid #2e2d45;margin:0 0 28px;">
+
+              <!-- Detalle de la compra -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#12111f;border-radius:8px;overflow:hidden;margin-bottom:32px;">
+                <tr>
+                  <td style="padding:20px 24px;border-bottom:1px solid #2e2d45;">
+                    <span style="font-size:11px;text-transform:uppercase;letter-spacing:1.5px;color:#6b69a0;font-family:Arial,sans-serif;">Producto</span><br>
+                    <span style="font-size:15px;color:#e2e0f0;font-weight:600;font-family:Arial,sans-serif;margin-top:4px;display:block;">
+                      {{1.description}}
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding:20px 24px;border-bottom:1px solid #2e2d45;">
+                    <span style="font-size:11px;text-transform:uppercase;letter-spacing:1.5px;color:#6b69a0;font-family:Arial,sans-serif;">Total pagado</span><br>
+                    <span style="font-size:15px;color:#e8c547;font-weight:700;font-family:Arial,sans-serif;margin-top:4px;display:block;">
+                      ${{1.transaction_amount}} {{1.currency_id}}
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding:20px 24px;">
+                    <span style="font-size:11px;text-transform:uppercase;letter-spacing:1.5px;color:#6b69a0;font-family:Arial,sans-serif;">N° de pago</span><br>
+                    <span style="font-size:13px;color:#6b69a0;font-family:'Courier New',monospace;margin-top:4px;display:block;">
+                      #{{1.id}}
+                    </span>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- BOTÓN DE DESCARGA -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:32px;">
+                <tr>
+                  <td align="center">
+                    <a href="TU_LINK_DE_GOOGLE_DRIVE_AQUÍ"
+                       style="display:inline-block;background:#e8c547;color:#0f0e17;font-size:16px;font-weight:700;font-family:Arial,sans-serif;text-decoration:none;padding:16px 40px;border-radius:8px;letter-spacing:0.3px;">
+                      ⬇ Descargar cómic
+                    </a>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- Nota de acceso -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#1f1e33;border-left:3px solid #e8c547;border-radius:0 8px 8px 0;margin-bottom:28px;">
+                <tr>
+                  <td style="padding:16px 20px;">
+                    <p style="margin:0;font-size:13px;color:#a09fbb;line-height:1.6;font-family:Arial,sans-serif;">
+                      <strong style="color:#e2e0f0;">¿Cómo descargarlo?</strong><br>
+                      Hacé clic en el botón de arriba. Se va a abrir Google Drive — desde ahí podés verlo en el navegador o descargarlo en tu dispositivo.
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- Separador -->
+              <hr style="border:none;border-top:1px solid #2e2d45;margin:0 0 28px;">
+
+              <!-- Cierre -->
+              <p style="margin:0;font-size:14px;color:#6b69a0;line-height:1.7;font-family:Arial,sans-serif;">
+                Si tenés algún problema con la descarga, respondé este email y te ayudo personalmente.<br><br>
+                ¡Gracias por apoyar el proyecto! 🙌
+              </p>
+              <p style="margin:20px 0 0;font-size:15px;color:#e2e0f0;font-family:'Georgia',serif;">
+                — <em>TU NOMBRE / FIRMA</em>
+              </p>
+
+            </td>
+          </tr>
+
+          <!-- FOOTER -->
+          <tr>
+            <td style="background-color:#12111f;border-radius:0 0 12px 12px;padding:24px 40px;text-align:center;">
+              <p style="margin:0;font-size:12px;color:#4a4869;font-family:Arial,sans-serif;line-height:1.6;">
+                Este email fue enviado automáticamente luego de tu compra en Mercado Pago.<br>
+                No hace falta que lo respondas para descargar el cómic.
+              </p>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>
